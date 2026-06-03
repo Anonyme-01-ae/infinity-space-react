@@ -1,37 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
-}
-
-.navbar {
-  background-color: #111827;
-  color: white;
-  padding: 15px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
 .logo-img {
   width: 40px;
   height: 40px;
@@ -40,335 +6,53 @@ body {
   border-radius: 50%;
 }
 
-.navbar nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 18px;
-}
-
-.navbar nav a:hover {
-  color: #c7d2fe;
-}
-
-.menu-btn {
-  display: none;
-  background-color: #4f46e5;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .hero {
   background-color: #1e1b4b;
-  color: white;
-  padding: 90px 8%;
+  padding: 90px 0;
 }
 
-.hero-content {
-  max-width: 750px;
-}
-
-.tag {
-  color: #c7d2fe;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.slogan {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.description {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #4f46e5;
-  color: white;
-  text-decoration: none;
-  padding: 12px 22px;
-  border-radius: 6px;
-}
-
-.btn:hover {
-  background-color: #3730a3;
-}
-
-.section {
-  padding: 60px 8%;
-}
-
-.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 30px;
-  color: #111827;
-}
-
-.section-intro {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.light {
-  background-color: #e5e7eb;
-}
-
-.about-box,
-.vision-mission,
-.grid,
-.events-grid {
-  display: grid;
-  gap: 20px;
-}
-
-.about-box,
-.vision-mission {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid,
-.events-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.about-box div,
-.card,
-.simple-card,
-.member-card,
-.event-card,
-.empty-card {
+.hero-logo {
+  width: 280px;
+  max-width: 100%;
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.about-box h3,
-.card h3,
-.simple-card h3,
-.member-card h3,
-.event-card h3,
-.empty-card h3 {
-  color: #312e81;
-  margin-bottom: 10px;
-}
-
-.list {
-  padding-left: 20px;
-}
-
-.member-card,
-.event-card {
+.club-card {
   transition: 0.3s;
 }
 
-.member-card:hover,
-.event-card:hover {
+.club-card:hover {
   transform: translateY(-5px);
 }
 
-.member-card p {
-  font-weight: bold;
-  color: #555;
-}
-
-.event-card {
-  padding: 0;
-  overflow: hidden;
-}
-
-.event-card img {
-  width: 100%;
+.event-img {
   height: 180px;
   object-fit: cover;
 }
 
-.event-content {
-  padding: 18px;
-}
-
-.date {
+.event-date {
   display: inline-block;
   background-color: #e0e7ff;
   color: #312e81;
-  padding: 5px 9px;
+  padding: 5px 10px;
   border-radius: 15px;
   font-size: 13px;
-  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.event-place {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #555;
-}
-
-.empty-card {
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-}
-
-.empty-card a {
-  color: #4f46e5;
-  font-weight: bold;
+footer a {
   text-decoration: none;
 }
 
-.contact {
-  background-color: #111827;
-  color: white;
-}
-
-.contact h2 {
-  color: white;
-}
-
-.contact p {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.form label {
-  font-weight: bold;
-}
-
-.form input,
-.form textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-}
-
-.form textarea {
-  min-height: 110px;
-}
-
-.form button {
-  background-color: #4f46e5;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.form button:hover {
-  background-color: #3730a3;
-}
-
-.form-message {
-  text-align: center;
-  font-weight: bold;
-}
-
-.footer {
-  background-color: #030712;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
-
-.footer p {
-  margin-bottom: 8px;
-}
-
-.instagram-link {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.instagram-link:hover {
-  color: #c7d2fe;
-}
-
-.instagram-icon {
-  display: inline-block;
-  background-color: #dd2a7b;
-  color: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  line-height: 28px;
-  margin-right: 5px;
-}
-
-@media (max-width: 900px) {
-  .navbar {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-  .navbar nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .navbar nav.open {
-    display: flex;
-  }
-
-  .navbar nav a {
-    margin: 7px 0;
-  }
-
-  .about-box,
-  .vision-mission,
-  .grid,
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .hero {
-    padding: 60px 5%;
+    padding: 60px 0;
+    text-align: center;
   }
 
-  .section {
-    padding: 45px 5%;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .slogan {
-    font-size: 18px;
-  }
-
-  .event-card img {
-    height: 160px;
+  .hero-logo {
+    width: 200px;
   }
 }
