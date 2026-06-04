@@ -1,9 +1,6 @@
-function Events({ title, events, bgLight }) {
+function Events({ title, events, idSection, sectionClass }) {
   return (
-    <section
-      id={title === "Activités réalisées" ? "activites" : "avenir"}
-      className={bgLight ? "py-5 bg-light" : "py-5"}
-    >
+    <section id={idSection} className={sectionClass}>
       <div className="container">
         <h2 className="text-center mb-4">{title}</h2>
 
@@ -12,6 +9,7 @@ function Events({ title, events, bgLight }) {
             return (
               <div className="col-md-4" key={index}>
                 <div className="card h-100 shadow-sm club-card">
+                  
                   {event.image && (
                     <img
                       src={event.image}
@@ -22,12 +20,18 @@ function Events({ title, events, bgLight }) {
 
                   <div className="card-body">
                     <span className="event-date">{event.date}</span>
-                    <h3 className="h5 text-primary mt-2">{event.title}</h3>
+
+                    <h3 className="h5 text-primary mt-2">
+                      {event.title}
+                    </h3>
+
                     <p>{event.description}</p>
+
                     <p className="fw-bold text-secondary mb-0">
                       Lieu : {event.place}
                     </p>
                   </div>
+
                 </div>
               </div>
             );
